@@ -1,0 +1,17 @@
+export concept Ledger = {
+  isValidated: Cell<Boolean>
+};
+
+export concept Witness = {
+  assertEligible: () => Boolean
+};
+
+export const privaCompliance: Contract<Ledger, Witness> = {
+  circuits: {
+    verifyUser: () => {
+      const isEligible = witness.assertEligible();
+      check isEligible;
+      ledger.isValidated.write(true);
+    }
+  }
+};
