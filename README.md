@@ -33,3 +33,17 @@ To guarantee architectural compliance and eliminate environment-specific discrep
 
 ### CI/CD Build Status
 Every code modification triggers our automated cloud compiler. The successful **Green Checkmark (`✓`)** under the GitHub Actions tab formally validates that the environment is sound and the codebase compiles perfectly.
+
+
+---
+
+## 🌒 Level 2 - Waxing Crescent Specifications
+
+### 🔐 Privacy Claim & Observable Behavior
+Our dApp proves strict regulatory and legal compliance *without revealing* the underlying user identity or sensitive credentials:
+* **Proven (What the world sees)**: A verified state transition on the Midnight Preprod testnet (`isValidated = true`).
+* **Concealed (What remains hidden)**: The private execution parameters analyzed locally inside the ZK circuit (`witness.assertEligible`).
+
+### 🚀 Verification Checklist
+* **Wallet integration**: Full Lace Wallet Connect/Disconnect cycle implemented on the Preprod network.
+* **Circuit Execution**: Verified zero-knowledge pipeline handling secure state modification logs dynamically from the frontend.
