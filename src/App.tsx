@@ -147,3 +147,4 @@ export default function App() {
     </div>
   );
 }// Lace wallet connection state management
+// Circuit execution handling wrapper
