@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This repository contains the smart contract implementation and automated toolchain verification for the PrivaCompliance decentralized application, built on the Midnight Network.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build --warnOnly",
@@ -12,14 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/deniz-1998/privacompliance-dapp.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/deniz-1998/privacompliance-dapp/issues"
-  },
-  "homepage": "https://github.com/deniz-1998/privacompliance-dapp#readme",
   "dependencies": {
     "react": "^19.2.7",
     "react-dom": "^19.2.7"

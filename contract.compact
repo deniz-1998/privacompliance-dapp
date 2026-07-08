@@ -1,17 +1,16 @@
-export concept Ledger = {
-  isValidated: Cell<Boolean>
-};
+pragma language_version >=0.1.0;
 
-export concept Witness = {
-  assertEligible: () => Boolean
-};
+import midnight;
 
-export const privaCompliance: Contract<Ledger, Witness> = {
-  circuits: {
-    verifyUser: () => {
-      const isEligible = witness.assertEligible();
-      check isEligible;
-      ledger.isValidated.write(true);
-    }
-  }
-};
+// 1. Ledger State (Halka Açık Durum) Tanımlaması
+export ledger isValidated: Cell<Boolean>;
+
+// 2. Witness (Gizli Kanıt / Özel Veri) Tanımlaması
+export witness assertEligible(): Boolean;
+
+// 3. Circuit (Sıfır Bilgi Kanıtı / ZK Devresi) Tanımlaması
+export circuit verifyUser(): Void {
+    const isEligible: Boolean = assertEligible();
+    check isEligible;
+    isValidated.write(true);
+}
