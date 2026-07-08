@@ -146,4 +146,4 @@ export default function App() {
       </footer>
     </div>
   );
-}
+}// Lace wallet connection state management
